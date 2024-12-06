@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+            margin: 0;
+            background: url('./red ribbons.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Comic Sans MS", cursive;
+            letter-spacing: 5px;
+        }
+        .tk-navbar {
+            background-color: #75202e;
+            overflow: hidden;
+        }
+        .tk-navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .tk-navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .tk-header {
+            position: relative;
+            text-align: center;
+            color: rgb(83, 23, 23);
+            background: url('./red ribbons.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 400px;
+        }
+        .tk-header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: #75202e;
+            text-shadow: 2px 2px 5px rgb(71, 22, 22);
+        }
+        .tk-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tk-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .tk-footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #75202e;
+            color: white;
+            margin-top: 20px;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; 
+            margin: 0; 
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgb(73, 4, 4);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: rgb(97, 17, 17);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #a35f5f;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tk-navbar">
+    <a href="2homepage.html">HOME</a>
+    <div class="dropdown">
+        <button class="dropbtn">BLOG
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="blog1.html">Blog 1</a>
+            <a href="blog2.html">Blog 2</a>
+            <a href="blog3.html">Blog 3</a>
+            <a href="blog4.html">Blog 4</a>
+            <a href="blog5.html">Blog 5</a>
+            <a href="blog6.html">Blog 6</a>
+            <a href="blog7.html">Blog 7</a>
+            <a href="blog8.html">Blog 8</a>
+            <a href="blog9.html">Blog 9</a>
+            <a href="blog10.html">Blog 10</a>
+            <a href="blog11.html">Blog 11</a>
+        </div>
+    </div>
+</div>
+
+<div class="tk-header" id="home">
+    <h1>Pseudocode & Flowchart</h1>
+</div>
+
+<div class="tk-content" id="blog">
+    <h1>Purchasing Online</h1>
+    <h2>Pseudocode</h2>
+    
+    <p>
+        <p>&nbsp; Start</p>
+        <div>
+        <div>Display products</div>
+        <div>Input selected_product</div>
+        <div>If product available:</div>
+        <div>Add to cart</div>
+        <div>Proceed to checkout</div>
+        <div>Input shipping_info</div>
+        <div>Input payment_details</div>
+        <div>If payment successful:</div>
+        <div>Display "Order confirmed"</div>
+        <div>Send order to warehouse</div>
+        <div>Else:</div>
+        <div>Display "Payment failed"</div>
+        <div>Else:</div>
+        <div>Display "Product not available"</div>
+        <div>End</div>
+        </div>
+    <h3>FLowchart</h3>
+    <img src="flowchart.jpg" alt="flowchart">
+</div>
+
+<footer class="tk-footer">
+    <p>Explore the role of computer systems within it.</p>
+</footer>
+
+</body>
+</html>

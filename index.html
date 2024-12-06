@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome, Bunny! 💌🐇</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Comic Sans MS", sans-serif;
+            background: url('./red ribbons.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .envelope {
+            position: relative;
+            width: 180px;
+            height: 120px;
+            background-color: #f3e5d0; 
+            border: 4px solid #912638; 
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(207, 207, 207, 0.3);
+            animation: wiggle 2s infinite;
+        }
+        .envelope:before, .envelope:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+        .envelope:before {
+            top: 0;
+            left: 0;
+            border-width: 60px 90px 0 90px;
+            border-color: #ad3b4e transparent transparent transparent; 
+            border-radius: 10px;
+        }
+        .envelope:after {
+            bottom: 0;
+            left: 0;
+            border-width: 0 90px 60px 90px;
+            border-color: transparent transparent #f3e5d0 transparent; 
+        }
+        .pink-ribbon {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 60px; /
+            height: auto; 
+        }
+        .pink-ribbon img {
+            width: 100%; 
+            height: auto;
+        }
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0); }
+            25% { transform: rotate(3deg); }
+            50% { transform: rotate(-3deg); }
+            75% { transform: rotate(3deg); }
+        }
+        .click-message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #a11f35; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="window.location.href='2homepage.html';" title="Click me, Bunny! 💖">
+        <div class="pink-ribbon">
+            <img src="pink ribbon.gif" alt="pink ribbon">
+        </div>
+    </div>
+    <p class="click-message">Click the pretty envelope to hop in!🐇</

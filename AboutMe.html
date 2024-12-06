@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./creamribbons.png'); 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #58100A;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .navigation a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #58100A;
+            color: white;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ece3d2;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .personal-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .personal-info div {
+            max-width: 60%;
+        }
+        .personal-info img {
+            width: 200px; /* Increased size */
+            height: auto;
+            border-radius: 10px;
+        }
+        h2, h3, h5 {
+            color: #58100A;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .images-grid img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .checklist {
+            display: block;
+        }
+        .checklist input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎀 My Student Database 🎀</h1>
+        <div class="navigation">
+            <a href="2homepage.html">HOME</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Personal Info with Image -->
+        <div class="personal-info">
+            <div>
+                <h2>Personal Info</h2>
+                <p><strong>Name:</strong> Iesha Katriel P. Ruiz</p>
+                <p><strong>Nickname:</strong> Kat, Yesh, Shang</p>
+                <p><strong>Birthday:</strong> May 30, 2005</p>
+                <p><strong>Zodiac Sign:</strong> Gemini</p>
+            </div>
+            <img src="./kat.jpg" alt="Kat's Picture">
+        </div>
+
+        <h3>School Information</h3>
+        <p><strong>School:</strong> University Of San Carlos (Talamban Campus)</p>
+        <p><strong>Student ID:</strong> 22102311</p>
+        <p><strong>Email:</strong> 22102311@usc.edu.ph</p>
+
+        <h3>Homework Assignments:</h3>
+        <ul class="checklist">
+            <li><input type="checkbox"> Study Discrete</li>
+            <li><input type="checkbox"> Case Study</li>
+            <li><input type="checkbox"> ITC Portfolio</li>
+            <li><input type="checkbox"> PC</li>
+        </ul>
+
+        <h3>Favorite Colors:</h3>
+        <div class="images-grid">
+            <img src="winered.png" alt="Wine Red">
+            <img src="lightpink.jpg" alt="Pink">
+        </div>
+        <h3>Favorite Foods:</h3>
+        <div class="images-grid">
+            <img src="bread.JPG" alt="Floss Bread">
+            <img src="pasta.jpg" alt="Pasta">
+            <img src="icecream.jpg" alt="Ice Cream">
+            <img src="tikoy.jpg" alt="Tikoy">
+            <img src="takoyaki.jpg" alt="Takoyaki">
+            <img src="shakes.jpg" alt="Shakes">
+        </div>
+
+        <h3>Hobbies & Things I Love:</h3>
+        <div class="images-grid">
+            <img src="crochet.png" alt="Crochet">
+            <img src="videogames.png" alt="Video Games">
+            <img src="sewing.png" alt="Sewing">
+            <img src="organizing.png" alt="Organizing">
+            <img src="crafting.png" alt="Crafting">
+            <img src="ribbons.png" alt="Ribbons">
+            <img src="bunny.png" alt="Bunnies">
+            <img src="pucca.png" alt="Pucca">
+            <img src="makeup.png" alt="Makeup">
+            <img src="nailart.png" alt="Nail Art">
+            <img src="whitetiger.png" alt="White Tiger">
+            <img src="music.png" alt="Listening to Music">
+        </div>
+    </div>
+</body>
+</html>
